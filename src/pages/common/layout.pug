@@ -125,14 +125,242 @@ html(lang="ru")
                         a.red-btn(href="#") смотреть цены
                 
                 .price
+                    .left-op
+                    .right-op
+                    .blue-line
                     .container
                         .title Стоимость
                         .price-btns                             
-                            a(href="#") Не включается
-                            a(href="#") Не показывает 
-                            a(href="#") Нет звука 
-                            a(href="#") Нет сигнала
-                            a(href="#") Не переключает каналы
+                            a(href="javascript:void(0);" data-switch="elem-1") Не включается
+                            a(href="javascript:void(0);" data-switch="elem-2" class="active") Не показывает 
+                            a(href="javascript:void(0);" data-switch="elem-3") Нет звука 
+                            a(href="javascript:void(0);" data-switch="elem-4") Нет сигнала
+                            a(href="javascript:void(0);" data-switch="elem-5") Не переключает каналы
+                        .elems-bug
+                            .elem-bug#elem-1(style="display:none;")
+                                .row
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-1.jpg);")
+                                            .bug-item__title Ремонт блока изображения
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-2.jpg);")
+                                            .bug-item__title Замена лампы подсветки
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появился розовый оттенок изображения
+                                                li Подсветка полностью гаснет после включения
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-3.jpg);")
+                                            .bug-item__title Замена экрана телевизора
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появление горизонтальных или вертикальных полос
+                                                li Мигающее изображение
+                                                li Нарушение целостности экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 890 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-4.jpg);")
+                                            .bug-item__title Ремонт инвертора
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 590 руб.
+
+                            .elem-bug#elem-2
+                                .row
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-1.jpg);")
+                                            .bug-item__title Ремонт блока изображения
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-2.jpg);")
+                                            .bug-item__title Замена лампы подсветки
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появился розовый оттенок изображения
+                                                li Подсветка полностью гаснет после включения
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-3.jpg);")
+                                            .bug-item__title Замена экрана телевизора
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появление горизонтальных или вертикальных полос
+                                                li Мигающее изображение
+                                                li Нарушение целостности экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 890 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-4.jpg);")
+                                            .bug-item__title Ремонт инвертора
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 590 руб.
+
+                            .elem-bug#elem-3(style="display:none;")
+                                .row
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-1.jpg);")
+                                            .bug-item__title Ремонт блока изображения
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-2.jpg);")
+                                            .bug-item__title Замена лампы подсветки
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появился розовый оттенок изображения
+                                                li Подсветка полностью гаснет после включения
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+
+                            .elem-bug#elem-4(style="display:none;")
+                                .row
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-1.jpg);")
+                                            .bug-item__title Ремонт блока изображения
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-2.jpg);")
+                                            .bug-item__title Замена лампы подсветки
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появился розовый оттенок изображения
+                                                li Подсветка полностью гаснет после включения
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                            .elem-bug#elem-5(style="display:none;")
+                                .row
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-1.jpg);")
+                                            .bug-item__title Ремонт блока изображения
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Недостаточная яркость
+                                                li Отключенные лампы подсветки
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                                    .col-lg-6
+                                        .bug-item(style="background-image: url(img/price-2.jpg);")
+                                            .bug-item__title Замена лампы подсветки
+                                            .bug-item__subtitle Симптомы:
+                                            ul
+                                                li Появился розовый оттенок изображения
+                                                li Подсветка полностью гаснет после включения
+                                                li Отсутствие равномерной подсветки экрана
+                                            .bug-item__price
+                                                span Стоимость работы:
+                                                i 790 руб.
+
+                .brands.decor-top.decor-bottom
+                    .container
+                        .title Марки, с которыми мы работаем    
+                        .brands-slider.swiper-container
+                            .brands-wrapper.swiper-wrapper
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-1.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-2.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-3.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-4.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-5.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-6.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-7.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-8.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-9.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-10.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-11.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-12.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-1.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-2.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-3.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-4.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-5.png" alt="" />
+                                .swiper-slide
+                                    .swiper-slide-content <img src="img/brand-6.png" alt="" />
+                            .swiper-pagination-brands
+                        .swiper-button-brands-prev.swiper-button-prev
+                        .swiper-button-brands-next.swiper-button-next
+
 
         
         

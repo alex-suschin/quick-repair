@@ -11,18 +11,24 @@ $(function() {
         return false;
     });
 
-    var worksThumbs = new Swiper('.works-thumbs', {
-        spaceBetween: 36,
-        slidesPerView: 3,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
+    var swiper = new Swiper('.brands-slider', {
+        slidesPerView: 6,
+        slidesPerColumn: 2,
+        spaceBetween: 25,
+        pagination: {
+            el: '.swiper-pagination-brands',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-brands-next',
+            prevEl: '.swiper-button-brands-prev',
+        },
     });
 
-    $('.price-bnts a').click(function() {
-        $('.price-bnts').find('.active').removeClass('active');
+    $('.price-btns a').click(function() {
+        $('.price-btns').find('.active').removeClass('active');
         $(this).addClass('active');
-        $('.price-box').find('.price-box-elem').hide();
+        $('.elems-bug').find('.elem-bug').hide();
         $('#' + $(this).data('switch')).show();
     });
 })
