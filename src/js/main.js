@@ -25,6 +25,19 @@ $(function() {
         },
     });
 
+    var swiperworks = new Swiper('.works-slider', {
+        slidesPerColumn: 1,
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination-works',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-works-next',
+            prevEl: '.swiper-button-works-prev',
+        },
+    });
+
     $('.price-btns a').click(function() {
         $('.price-btns').find('.active').removeClass('active');
         $(this).addClass('active');
