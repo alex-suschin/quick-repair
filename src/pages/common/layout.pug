@@ -3,14 +3,140 @@ html(lang="ru")
     block head
         head
             meta(charset="utf-8")
-            title Title your site
+            title Quick Repair
             meta(content="width=device-width, initial-scale=1" name="viewport")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
-            link(rel="stylesheet" href="css/style.min.css")
+            link(rel="stylesheet" href="css/vendors.min.css")
+            link(rel="stylesheet" href="css/style.css")
     body
-        block header
-            include header
-        block content
+        .header-wrap(style="background-image: url(img/top-wrap-bg.jpg);")
+            block header
+                include header
+                .top-wrap
+                    .container
+                        .desc Мобильный сервисный центр по ремонту телевизоров
+                        .title Всего 1 час и ваш телевизор снова заработает!
+                        .sale-text Вызовите мастера до конца месяца и получите скидку <b>20%</b> на ремонт
+                        a.red-btn(href="#") Вызвать мастера
+                    .man(style="background-image: url(img/man.png);")
+
+                .exs.decor-top.decor-bottom
+                    .red-line(style="background-image: url(img/red-line.png);")
+                    .container
+                        .row
+                            .col-lg-3
+                                .exs-item
+                                    .exs-item__num 7
+                                    .exs-item__circle <img src="img/circle.png" alt="" />
+                                    .exs-item__text лет опыта
+                            .col-lg-3
+                                .exs-item
+                                    .exs-item__num 932
+                                    .exs-item__circle <img src="img/circle.png" alt="" />
+                                    .exs-item__text отремонтированных телевизоров
+                            .col-lg-3
+                                .exs-item
+                                    .exs-item__num 31
+                                    .exs-item__circle <img src="img/circle.png" alt="" />
+                                    .exs-item__text мастер в команде
+                            .col-lg-3
+                                .exs-item
+                                    .exs-item__num 2
+                                    .exs-item__circle <img src="img/circle.png" alt="" />
+                                    .exs-item__text своих склада с запчастями
+                    
+                .why(style="background-image: url(img/bg-why.jpg);")
+                    .container
+                        .title Почему стоит вызвать мастера на дом?
+                        .row
+                            .col-lg-4.col-xl-4
+                                .why-item
+                                    .why-item-content
+                                        .why-item__img <img src="img/why-ico-1.svg" alt="" />
+                                        .why-item__title Удобно
+                                        .why-item__desc Вам не нужно никуда везти технику самостоятельно, мастер приедет к вам сам
+
+                            .col-lg-4.col-xl-4
+                                .why-item
+                                    .why-item-content
+                                        .why-item__img <img src="img/why-ico-2.svg" alt="" />
+                                        .why-item__title Экономит время
+                                        .why-item__desc Наши опытные матера оперативно починят неисправность
+
+                            .col-lg-4.col-xl-4
+                                .why-item
+                                    .why-item-content
+                                        .why-item__img <img src="img/why-ico-3.svg" alt="" />
+                                        .why-item__title Быстро приезжаем
+                                        .why-item__desc В течение 2х часов после посе оформления заявки мастер приедет к вам на вызов
+
+                            .col-lg-4.col-xl-4
+                                .why-item
+                                    .why-item-content
+                                        .why-item__img <img src="img/why-ico-4.svg" alt="" />
+                                        .why-item__title Низкая цена
+                                        .why-item__desc На протяжении 2х лет мы не поднимаем цены на услуги
+
+                            .col-lg-4.col-xl-4
+                                .why-item
+                                    .why-item-content
+                                        .why-item__img <img src="img/why-ico-5.svg" alt="" />
+                                        .why-item__title Гарантия 1 год 
+                                        .why-item__desc После ремонта наш мастер выдаст гарантийный талон 
+
+                            .col-lg-4.col-xl-4
+                                .why-item
+                                    .why-item-content
+                                        .why-item__img <img src="img/why-ico-6.svg" alt="" />
+                                        .why-item__title Видите ремонт
+                                        .why-item__desc Вы можете лично присутствовать при ремонте и контролировать процесс
+
+                .services.decor-top
+                    .container
+                        .title Услуги
+                        .services-items
+                            <img class="img-serv" src="img/serv-img.png" alt="" />
+                            .services-item.services-item-1
+                                .services-item-content
+                                    .services-item__title Не переключает каналы
+                                    .services-item__price Цена ремонта от 490  ₽
+
+                            .services-item.services-item-2
+                                .services-item-content
+                                    .services-item__title Не включается
+                                    .services-item__price Цена ремонта от 550  ₽
+
+                            .services-item.services-item-3
+                                .services-item-content
+                                    .services-item__title Нет звука
+                                    .services-item__price Цена ремонта от 590  ₽
+
+                            .services-item.services-item-4
+                                .services-item-content
+                                    .services-item__title Не показывает
+                                    .services-item__price Цена ремонта от 590  ₽
+
+                            .services-item.services-item-5
+                                .services-item-content
+                                    .services-item__title Нет сигнала
+                                    .services-item__price Цена ремонта от 450  ₽
+
+                       
+                        a.red-btn(href="#") смотреть цены
+                
+                .price
+                    .container
+                        .title Стоимость
+                        .price-btns                             
+                            a(href="#") Не включается
+                            a(href="#") Не показывает 
+                            a(href="#") Нет звука 
+                            a(href="#") Нет сигнала
+                            a(href="#") Не переключает каналы
+
+        
+        
+
         block footer
             include footer
         block scripts
