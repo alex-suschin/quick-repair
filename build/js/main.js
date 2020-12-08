@@ -27,7 +27,7 @@ $(function() {
 
     var swiperworks = new Swiper('.works-slider', {
         slidesPerColumn: 1,
-        effect: 'fade',
+        spaceBetween: 70,
         pagination: {
             el: '.swiper-pagination-works',
             clickable: true,
