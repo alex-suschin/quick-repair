@@ -12,7 +12,7 @@ $(function() {
     });
 
     var swiper = new Swiper('.brands-slider', {
-        slidesPerView: 6,
+        slidesPerView: 4,
         slidesPerColumn: 2,
         spaceBetween: 25,
         pagination: {
@@ -23,6 +23,21 @@ $(function() {
             nextEl: '.swiper-button-brands-next',
             prevEl: '.swiper-button-brands-prev',
         },
+        breakpoints: {
+            992: {
+                slidesPerView: 6,
+                slidesPerColumn: 2,
+                spaceBetween: 25,
+                pagination: {
+                    el: '.swiper-pagination-brands',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-brands-next',
+                    prevEl: '.swiper-button-brands-prev',
+                },
+            }
+        }
     });
 
     var swiperworks = new Swiper('.works-slider', {
