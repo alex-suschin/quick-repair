@@ -6,7 +6,7 @@ $(function() {
 
     jQuery("a.scroll").click(function() {
         elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top;
+        destination = jQuery(elementClick).offset().top - 120;
         jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 700);
         return false;
     });

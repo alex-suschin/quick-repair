@@ -2171,6 +2171,26 @@ form {
     M O B I L E
 */
 
+@media screen and (max-width: 1650px) {
+    .top-wrap .man {
+        right: 0;
+    }
+    .right-op,
+    .left-op {
+        display: none;
+    }
+    .anchor {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .right-op-black,
+    .left-op-black {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     html,
     body {
@@ -2183,7 +2203,90 @@ form {
     }
 }
 
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+    .footer__left {
+        width: 50%;
+    }
+    .footer__right {
+        width: 49.5%;
+    }
+    .contacts-item span {
+        font-size: 22px;
+    }
+    .works-slider {
+        margin-left: -35px;
+        margin-right: -35px;
+        width: initial;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 100%;
+    }
+    .price-btns a {
+        margin: 0 20px;
+    }
+    .form-popup-box input {
+        margin-bottom: 0;
+    }
+    .form-popup-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-wrap .sale-text::after {
+        right: -44px;
+        bottom: -108px;
+    }
+    .modal-content {
+        margin: 0 20px;
+    }
+    .why-item__title {
+        font-size: 22px;
+        margin-bottom: 12px;
+        line-height: 1.2;
+    }
+    .why-item__img {
+        right: 10px;
+        top: 15px;
+    }
+    .why-item-content {
+        padding: 30px 25px 15px 20px;
+    }
+    .why-item__desc {
+        font-size: 14px;
+    }
+    .exs-item__text {
+        font-size: 21px;
+        line-height: 1.2;
+    }
+    .top-menu li {
+        margin-right: 15px;
+    }
+    .top-wrap {
+        padding: 50px 0 60px 0;
+    }
+    .top-wrap .title,
+    .title {
+        line-height: 1.15;
+    }
+    .top-wrap .title {
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+    .top-wrap .sale-text {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .top-wrap .sale-text b {
+        font-size: 38px;
+    }
+    .top-wrap .man {
+        top: -19px;
+        right: -100px;
+        width: 595px;
+        height: 615px;
+    }
+}
 
 @media screen and (max-width: 991px) {}
 
