@@ -1,6 +1,6 @@
-footer.footer.decor-top
+footer.footer.decor-top#contacts
     .container
-        a.anchor(href="header") Наверх
+        a.anchor.scroll(href="header") Наверх
         .footer__left
             .title Контакты
             .contacts
@@ -28,3 +28,17 @@ footer.footer.decor-top
                         button(type="submit" class="red-btn") оставить заявку
                     .agree Нажимая кнопку, вы соглашаетесь<br> с <a href="#">политикой конфиденциальности</a>
 
+.modal.fade#modal(tabindex='-1' aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-close(data-dismiss="modal")
+            form(action="/" method="POST" class="form-popup")
+                .form-popup-content
+                    .title Оставьте заявку
+                    .desc Мы перезвоним вам в течение 20 минут  и ответим на все интересующие вас вопросы
+                    .form-popup-box
+                        span <input type="text" placeholder="Имя" />
+                        span <input type="tel" placeholder="+7 (___) ___-__-__" />
+                        .red-btn-box
+                            <button type="submit" class="red-btn">оставить заявку</button>
+                    .agree Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>

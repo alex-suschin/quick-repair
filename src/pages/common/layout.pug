@@ -18,10 +18,10 @@ html(lang="ru")
                         .title Всего 1 час и ваш телевизор снова заработает!
                         .sale-text Вызовите мастера до конца месяца и получите скидку <b>20%</b> на ремонт
                         .red-btn-box
-                            a.red-btn(href="#") Вызвать мастера
+                            a.red-btn(hhref="javascript: void(0);" data-toggle="modal" data-target="#modal") Вызвать мастера
                     .man(style="background-image: url(img/man.png);")
 
-                .exs.decor-top.decor-bottom
+                .exs.decor-top.decor-bottom#exs
                     .red-line(style="background-image: url(img/red-line.png);")
                     .container
                         .row
@@ -92,41 +92,47 @@ html(lang="ru")
                                         .why-item__title Видите ремонт
                                         .why-item__desc Вы можете лично присутствовать при ремонте и контролировать процесс
 
-                .services.decor-top
+                .services.decor-top#services
                     .container
                         .title Услуги
                         .services-items
+                            .services-icons
+                                <img id="1" src="img/ico-bug-1.svg" alt="" style="display:none;" />
+                                <img id="2" src="img/ico-bug-2.svg" alt="" style="display:none;" />
+                                <img id="3" src="img/ico-bug-3.svg" alt="" style="display:none;" />
+                                <img id="4" src="img/ico-bug-4.svg" alt="" style="display:none;" />
+                                <img id="5" src="img/ico-bug-5.svg" alt="" style="display:none;" />
                             <img class="img-serv" src="img/serv-img.png" alt="" />
-                            .services-item.services-item-1
+                            .services-item.services-item-1(data-bug="1")
                                 .services-item-content
                                     .services-item__title Не переключает каналы
                                     .services-item__price Цена ремонта от 490  ₽
 
-                            .services-item.services-item-2
+                            .services-item.services-item-2(data-bug="2")
                                 .services-item-content
                                     .services-item__title Не включается
                                     .services-item__price Цена ремонта от 550  ₽
 
-                            .services-item.services-item-3
+                            .services-item.services-item-3(data-bug="3")
                                 .services-item-content
                                     .services-item__title Нет звука
                                     .services-item__price Цена ремонта от 590  ₽
 
-                            .services-item.services-item-4
+                            .services-item.services-item-4(data-bug="4")
                                 .services-item-content
                                     .services-item__title Не показывает
                                     .services-item__price Цена ремонта от 590  ₽
 
-                            .services-item.services-item-5
+                            .services-item.services-item-5(data-bug="5")
                                 .services-item-content
                                     .services-item__title Нет сигнала
                                     .services-item__price Цена ремонта от 450  ₽
 
                        
                         .red-btn-box
-                            a.red-btn(href="#") смотреть цены
+                            a.red-btn.scroll(href="#price") смотреть цены
                 
-                .price
+                .price#price
                     .left-op
                     .right-op
                     .blue-line
@@ -363,7 +369,7 @@ html(lang="ru")
                         .swiper-button-brands-prev.swiper-button-prev
                         .swiper-button-brands-next.swiper-button-next
 
-                .works
+                .works#works
                     .container
                         .title Наши работы
                         .works-slider.swiper-container
