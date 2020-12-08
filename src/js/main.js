@@ -12,7 +12,7 @@ $(function() {
     });
 
     var swiper = new Swiper('.brands-slider', {
-        slidesPerView: 4,
+        slidesPerView: 2,
         slidesPerColumn: 2,
         spaceBetween: 25,
         pagination: {
@@ -22,6 +22,21 @@ $(function() {
         navigation: {
             nextEl: '.swiper-button-brands-next',
             prevEl: '.swiper-button-brands-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+                slidesPerColumn: 2,
+                spaceBetween: 25,
+                pagination: {
+                    el: '.swiper-pagination-brands',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-brands-next',
+                    prevEl: '.swiper-button-brands-prev',
+                },
+            }
         },
         breakpoints: {
             992: {
@@ -78,4 +93,26 @@ $(function() {
             }
         }
     });
+
+    $('#hamburger-icon').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.top-menu').addClass('active');
+            $('html').addClass('ov-hidden');
+        } else {
+            $('.top-menu').removeClass('active');
+            $('html').removeClass('ov-hidden');
+        }
+    });
 })
+$(window).on('load resize', function() {
+
+    var width = $(window).width();
+    if (width < '992') {
+        $('.top-menu a').click(function() {
+            $('#hamburger-icon').removeClass('active');
+            $('.top-menu').removeClass('active');
+            $('html').removeClass('ov-hidden');
+        });
+    }
+});
